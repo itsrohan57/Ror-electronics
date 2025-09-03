@@ -1,0 +1,2019 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: #1a1a1a;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px ;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(64, 64, 64);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #0071e3;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #0071e3;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#hero {
+    background-image:url(images/backdrop.png) ;
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h4 {
+    
+    font-size: 30px ;
+
+}
+
+#hero h2 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+
+}
+
+#hero p {
+   padding-bottom: 15px;
+
+}
+
+#hero button {
+     background-color: #0071e3;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    -webkit-font-smoothing:antialiased;
+    transition: 0.3s ease-in-out;
+    border: 0;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background-color: #fff9f994;
+}
+
+#product1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 12px 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(61, 61, 61, 0.1);
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+    position: relative;
+    
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    
+    
+}
+
+#product1 .pro:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.192);
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+
+}
+
+#product1 .pro .des span {
+    color: rgb(64, 64, 64);
+    font-size: 12px;
+
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0071e3
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #0071e3;
+    border: 1px solid #ccd3e7;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+  background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    -webkit-font-smoothing:antialiased;
+    transition: 0.3s ease-in-out;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+}
+
+button.normal:hover {
+    background-color: #fff9f994;
+}
+
+
+body {
+    width: 100%;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner/bababaner.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#banner h2 {
+    color: white;
+    font-size: 30px;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url(images/banner/bbaner.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#sm-banner .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner/banneer.gif);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 22%;
+    text-shadow: 2px 2px 5px rgb(104, 104, 104);
+    
+}
+
+#sm-banner h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgb(104, 104, 104);
+    
+}
+
+#sm-banner span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 5px rgb(104, 104, 104);
+    
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: #fff9f994;
+    border: 1px solid #ffffff;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner/boxb.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 .banner-boxA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner/boxx.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-boxB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner/boxa.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo1 {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(64,64,64);
+    margin-bottom: 10px;
+    font-size: 13px;
+
+
+}
+
+footer p {
+    margin: 0 0 8px 0;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i {
+    padding-right: 4px;
+    color: rgb(64,64,64);
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid rgb(133, 133, 133) ;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px o 15px 0;
+}
+
+footer .follow i:hover, 
+footer a:hover {
+    color:#0071e3
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media (max-width:799px) {
+    #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  .product-mobile {
+    width: 100%;
+    height: 250px !important;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+  #navbar.active {
+    right: 0;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  } 
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color:#1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: rgb(64, 64, 64);
+    font-size: 24px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #hero {
+    
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+    
+    
+}
+
+#product1 .pro-container {
+   justify-content: center;
+}
+
+#product1 .pro {
+   
+    margin: 15px;
+}
+
+#banner {
+ height: 20vh;
+
+}
+
+#sm-banner .banner-box {
+    min-height: 100%;
+    height: 30vh;
+    min-width: 100%;
+    
+}
+
+#sm-banner .banner-box2 {
+   min-height: 100%;
+   height: 30vh;
+   margin-top: 20px;
+   min-width: 100%;
+}
+
+#banner3 .banner-box {
+    
+    height: 20vh;
+}
+
+#hero1-2 {
+   
+    height: 200px !important;
+    width: 100% !important;
+    
+}
+
+button.normal2 {
+    margin-top: 10px !important;
+}
+
+#hero1 {
+   
+    height: 300px !important;
+    width: 100%;
+    
+}
+
+#hero1-1 {
+   
+    height: 300px !important;
+    width: 100%;
+}
+#hero2 {
+   
+    height: 300px !important;
+    width: 100%;
+    
+}
+#hero2-1 {
+   
+    height: 300px !important;
+    width: 100%;
+}
+#hero3 {
+   
+    height: 300px !important;
+    width: 100%;
+    
+}
+#hero3-1 {
+   
+    height: 300px !important;
+    width: 100%;
+}
+#hero4 {
+   
+    height: 300px !important;
+    width: 100%;
+    
+}
+#hero4-1 {
+   
+    height: 300px !important;
+    width: 100%;
+}
+#hero5 {
+    background-image: url(images/banner/babaner.jpg);
+    height: 200px !important;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+
+#exp1 {
+   
+    height: 200px !important;
+    width: 100%;
+
+}
+#exp2 {
+   
+    height: 200px !important;
+    width: 100%;
+
+}
+#exp3 {
+   
+    height: 200px !important;
+    width: 100%;
+
+}
+#exp4 {
+   
+    height: 200px !important;
+    width: 100%;
+
+}
+#exp5 {
+   
+    height: 200px !important;
+    width: 100%;
+
+}
+#exp6 {
+   
+    height: 200px !important;
+    width: 100%;
+
+}
+#exp7 {
+   
+    height: 200px !important;
+    width: 100%;
+
+}
+
+.product-head {
+    width: 100% !important;
+    height: 220px !important;
+    
+}
+
+.product-mobile {
+    width: 100% !important;
+    height: 220px !important;
+    
+}
+
+.product-smart {
+    width: 100% !important;
+    height: 220px !important;
+    
+}
+
+.product-tab {
+    width: 100% !important;
+    height: 220px !important;
+    
+}
+
+
+#hero4-2 {
+    background-image: url("images/banner/samtabban.gif");
+    height: 300px !important;
+    width: 100%;
+    
+
+
+
+}
+}
+@media (max-width: 477px) {
+    #header {
+    padding: 10px 30px;
+}
+
+
+#hero {
+   padding: 0 20px;
+   background-position: 75%;
+}
+
+#hero h2 {
+    
+    font-size: 35px;
+}
+#sm-banner .banner-box {
+    height: 20vh !important;
+    width: 100%;
+}
+#sm-banner .banner-box2 {
+    
+    height: 20vh !important;
+}
+#banner3 .banner-box {
+    height: 20vh !important;
+    width: 100% !important;
+
+}
+
+#product1 .pro {
+    width: 100%;
+    
+}
+
+#banner {
+    height: 40vh;
+}
+
+#sm-banner .banner-box {
+    height: 40vh;
+    width: 100%;
+}
+
+#sm-banner span {
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 5px rgb(104, 104, 104);
+}
+
+#sm-banner .banner-box2 {
+    min-height: 100%;
+    height: 40vh;
+    
+}
+
+#banner3 .banner-box {
+    height: 25vh;
+    
+}
+
+hr {
+    display: none;
+    
+}
+
+#hero1 {
+    height: 150px !important;
+    width: 100% !important;
+}
+
+#hero1-1 {
+   
+    height: 150px !important;
+    width: 100% !important;
+    
+}
+#hero2 {
+    height: 150px !important;
+    width: 100% !important;
+    
+}
+#hero2-1 {
+    height: 150px !important;
+    width: 100% !important;
+    
+}
+
+#hero3 {
+    
+    height: 150px !important;
+    width: 100% !important;
+}
+#hero3-1 {
+    height: 150px !important;
+    width: 100% !important;
+    
+}
+
+#hero4 {
+    
+    height: 150px !important;
+    width: 100% !important;
+}
+
+#hero4-1 {
+    
+    height: 150px !important;
+    width: 100% !important;
+}
+
+
+#product1 .pro {
+    
+    min-width: 300px !important;
+   
+}
+
+.section-p1 {
+    padding: 40px 40px !important;
+}
+
+/*single product*/
+#prodetails {
+    display: flex;
+    flex-direction: column;
+}
+
+#prodetails .single-pro-image {
+    width: 100% !important;
+    margin-right: 0px !important;
+}
+
+#prodetails .single-pro-details {
+    width: 100% !important;
+}
+
+#hero1-2 {
+   
+    height: 100px !important;
+    width: 100% !important;
+    
+}
+
+#cart-add {
+    
+    flex-direction: column;
+    
+}
+
+#total {
+    width: 90% !important;
+    margin-bottom: 30px;
+   
+}
+
+#coupon input {
+    
+    width: 270px !important;
+   
+
+}
+
+button.normal2 {
+    margin-top: 10px !important;
+}
+
+.checkout-container {
+    background: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 380px !important;
+    max-width: 650px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+#hero5 {
+    background-image: url(images/banner/babaner.jpg);
+    height: 100px !important;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#exp1 {
+   
+    height: 100px !important;
+    width: 100%;
+
+}
+#exp2 {
+   
+    height: 100px !important;
+    width: 100%;
+
+}
+#exp3 {
+   
+    height: 100px !important;
+    width: 100%;
+
+}
+#exp4 {
+   
+    height: 100px !important;
+    width: 100%;
+
+}
+#exp5 {
+   
+    height: 100px !important;
+    width: 100%;
+
+}
+#exp6 {
+   
+    height: 100px !important;
+    width: 100%;
+
+}
+#exp7 {
+   
+    height: 100px !important;
+    width: 100%;
+
+}
+.product-tab {
+    width: 100% !important;
+    height: 270px !important;
+   
+}
+
+.product-head {
+    width: 100% !important;
+    height: 270px !important;
+   
+}
+
+.product-smart {
+    width: 100% !important;
+    height: 270px !important;
+   
+}
+
+.product-mobile {
+    width: 100% !important;
+    height: 270px !important;
+   
+}
+
+
+#hero4-2 {
+    background-image: url(images/banner/samtabban.gif);
+    height: 200px !important;
+    width: 100%;
+    
+}
+}
+
+
+#product1 .op {
+    font-size: 30px;
+    margin-top: -20px;
+    
+}
+
+#product1 .op1 {
+    font-size: 15px;
+    color: rgb(151, 151, 151);
+    
+}
+
+#product1 .op11 {
+    font-size: 13px;
+    color: rgb(151, 151, 151);
+    
+}
+
+#hero1 {
+    background-image: url(images/banner/bbbaner.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero1-1 {
+    background-image: url(images/banner/bbbanner.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero2 {
+    background-image: url(images/banner/headban.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero2-1 {
+    background-image: url(images/banner/headbann.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#hero3 {
+    background-image: url(images/banner/watchbann.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero3-1 {
+    background-image: url(images/banner/watchban.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#hero4 {
+    background-image: url(images/banner/tabban.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero4-1 {
+    background-image: url(images/banner/lapban.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero4-2 {
+    background-image: url(images/banner/samtabban.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero5 {
+    background-image: url(images/banner/babaner.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.single-pro-details h2 {
+    color: #0071e3;
+
+}
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px ;
+}
+
+
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails button {
+     background-color: rgb(64, 64, 64);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    -webkit-font-smoothing:antialiased;
+    transition: 0.3s ease-in-out;
+    border: 0;
+    cursor: pointer;
+}
+
+#prodetails button:hover {
+    background-color: #79797994;
+}
+
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#hero1-2 {
+    background-image: url(images/banner/bbbaanner.gif) ;
+    height: 400px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+    border-radius: 5px;
+    
+    
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 13px;
+}
+
+button.normal2 {
+  background-color: #0071e3;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    -webkit-font-smoothing: antialiased;
+    transition: 0.3s ease-in-out;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+}
+
+button.normal2:hover {
+    background-color: #8585857e;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#total h3 {
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#total {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#total table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#total table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+
+}
+
+button.normal3 {
+  background-color: #0071e3;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+    -webkit-font-smoothing: antialiased;
+    transition: 0.3s ease-in-out;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+}
+
+button.normal3:hover {
+    background-color: #8585857e;
+}
+
+
+/*checkout page*/
+
+.checkout-container {
+  background: #fff;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+  font-size: 14px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.order-summary .payment-options {
+  margin-top: 20px;
+}
+
+.summary-item .summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.summary-total {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.payment-options label {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkout-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+  background: #0071e3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:  0.3s;
+}
+
+.checkout-btn:hover {
+  background: rgba(151, 151, 151, 0.534);
+}
+
+.customer-info .feedback {
+    height: 50%;
+
+}
+
+/*EXPLORE*/
+#exp1 {
+    background-image: url(images/explore/exp1.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#exp2 {
+    background-image: url(images/explore/exp2.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#exp3 {
+    background-image: url(images/explore/exp3.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#exp4 {
+    background-image: url(images/explore/exp4.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#exp5 {
+    background-image: url(images/explore/exp5.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#exp6 {
+    background-image: url(images/explore/exp6.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#exp7 {
+    background-image: url(images/explore/exp7.gif);
+    height: 500px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#des .details {
+    color:#0071e3
+}
+
+.logo {
+  width: 140px;       
+  height: 70px;
+  display: block;     
+  background-image: url(images/logogo.png);
+  background-size: contain;   
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-mobile {
+  width: 100%;     
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px; 
+}
+
+/* individual product images mobile */
+.mob1 {
+  background-image: url(images/mobile/ios/1.jpg);
+}
+
+.mob2 {
+  background-image: url(images/mobile/ios/6.jpg);
+}
+
+.mob3 {
+  background-image: url(images/mobile/ios/5.jpg);
+}
+
+.mob4 {
+  background-image: url(images/mobile/ios/11.jpg);
+}
+
+.mob5 {
+  background-image: url(images/mobile/ios/15.jpg);
+}
+
+.mob6 {
+  background-image: url(images/mobile/ios/18.jpg);
+}
+
+.mob7 {
+  background-image: url(images/mobile/ios/21.jpg);
+}
+
+.mob8 {
+  background-image: url(images/mobile/ios/24.jpg);
+}
+
+.mob9 {
+  background-image: url(images/mobile/android/1.jpg);
+}
+
+.mob10 {
+  background-image: url(images/mobile/android/5.jpg);
+}
+
+.mob11 {
+  background-image: url(images/mobile/android/8.jpg);
+}
+
+.mob12 {
+  background-image: url(images/mobile/android/12.jpg);
+}
+
+.mob13 {
+  background-image: url(images/mobile/android/14.jpg);
+}
+
+.mob14 {
+  background-image: url(images/mobile/android/18.jpg);
+}
+
+.mob15 {
+  background-image: url(images/mobile/android/22.jpg);
+}
+
+.mob16 {
+  background-image: url(images/mobile/android/26.jpg);
+}
+
+/* Common style for icons */
+.app-store, .play-store, .payment {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+/* App Store */
+.app-store {
+  width: 150px;
+  height: 50px;
+   border: 1px solid rgb(133, 133, 133) ;
+    border-radius: 6px;
+  background-image: url(images/pay/app.jpg);
+}
+
+/* Google Play */
+.play-store {
+  width: 150px;
+  height: 50px;
+   border: 1px solid rgb(133, 133, 133) ;
+    border-radius: 6px;
+  background-image: url(images/pay/play.jpg);
+  margin-left: 10px; 
+}
+
+/* Payment */
+.payment {
+  width: 250px;
+  height: 50px;
+  background-image: url(images/pay/pay.png);
+  margin-top: 10px;
+}
+
+
+.product-head {
+  width: 250px;     
+  height: 250px;
+  background-size: cover;    
+  background-position: center;
+  border-radius: 20px; 
+}
+
+/* individual product */
+.hea1 {
+  background-image: url(images/headphones/1.jpg);
+}
+
+.hea2 {
+  background-image: url(images/headphones/5.jpg);
+}
+
+.hea3 {
+  background-image: url(images/headphones/8.jpg);
+}
+
+.hea4 {
+  background-image: url(images/headphones/9.jpg);
+}
+
+.hea5 {
+  background-image: url(images/headphones/11.jpg);
+}
+
+.hea6 {
+  background-image: url(images/headphones/15.jpg);
+}
+
+.hea7 {
+  background-image: url(images/headphones/18.jpg);
+}
+
+.hea8 {
+  background-image: url(images/headphones/22.jpg);
+}
+
+.hea9 {
+  background-image: url(images/headphones/heada.jpg);
+}
+
+.hea10 {
+  background-image: url(images/headphones/headb.jpg);
+}
+
+.hea11 {
+  background-image: url(images/headphones/headc.jpg);
+}
+
+.hea12 {
+  background-image: url(images/headphones/headd.jpg);
+}
+
+.hea13 {
+  background-image: url(images/headphones/heade.jpg);
+}
+
+.hea14 {
+  background-image: url(images/headphones/headf.jpg);
+}
+
+.hea15 {
+  background-image: url(images/headphones/headg.jpg);
+}
+
+.hea16 {
+  background-image: url(images/headphones/headh.jpg);
+}
+
+.product-smart {
+  width: 250px;     
+  height: 250px;
+  background-size: cover;    
+  background-position: center;
+  border-radius: 20px; 
+}
+
+/* individual product images mobile */
+.sma1 {
+  background-image: url(images/smartwatches/wa1.jpg);
+}
+
+.sma2 {
+  background-image: url(images/smartwatches/wa2.jpg);
+}
+
+.sma3 {
+  background-image: url(images/smartwatches/wa3.jpg);
+}
+
+.sma4 {
+  background-image: url(images/smartwatches/wa4.jpg);
+}
+
+.sma5 {
+  background-image: url(images/smartwatches/wa5.jpg);
+}
+
+.sma6 {
+  background-image: url(images/smartwatches/wa6.jpg);
+}
+
+.sma7 {
+  background-image: url(images/smartwatches/wa7.jpg);
+}
+
+.sma8 {
+  background-image: url(images/smartwatches/wa8.jpg);
+}
+
+.sma9 {
+  background-image: url(images/smartwatches/wa9.jpg);
+}
+
+.sma10 {
+  background-image: url(images/smartwatches/wa10.jpg);
+}
+
+.sma11 {
+  background-image: url(images/smartwatches/wa11.jpg);
+}
+
+.sma12 {
+  background-image: url(images/smartwatches/wa12.jpg);
+}
+
+.sma13 {
+  background-image: url(images/smartwatches/wa13.jpg);
+}
+
+.sma14 {
+  background-image: url(images/smartwatches/wa14.jpg);
+}
+
+.sma15 {
+  background-image: url(images/smartwatches/wa15.jpg);
+}
+
+.sma16 {
+  background-image: url(images/smartwatches/wa16.jpg);
+}
+
+.product-tab {
+  width: 250px;     
+  height: 250px;
+  background-size: cover;    
+  background-position: center;
+  border-radius: 20px; 
+}
+
+/* individual product images mobile */
+.tab1 {
+  background-image: url(images/tablet&mobile/tab1.jpg);
+}
+
+.tab2 {
+  background-image: url(images/tablet&mobile/tab2.jpg);
+}
+.tab3 {
+  background-image: url(images/tablet&mobile/tab3.jpg);
+}
+.tab4 {
+  background-image: url(images/tablet&mobile/tab4.jpg);
+}
+.tab5 {
+  background-image: url(images/tablet&mobile/tab5.jpg);
+}
+.tab6 {
+  background-image: url(images/tablet&mobile/tab6.jpg);
+}
+.tab7 {
+  background-image: url(images/tablet&mobile/tab7.jpg);
+}
+.tab8 {
+  background-image: url(images/tablet&mobile/tab8.jpg);
+}
+.tab9 {
+  background-image: url(images/tablet&mobile/tab9.jpg);
+}
+.tab10 {
+  background-image: url(images/tablet&mobile/tab10.jpg);
+}
+.tab11 {
+  background-image: url(images/tablet&mobile/tab11.jpg);
+}
+.tab12 {
+  background-image: url(images/tablet&mobile/tab12.jpg);
+}
+.tab13 {
+  background-image: url(images/tablet&mobile/tab13.jpg);
+}
+.tab14 {
+  background-image: url(images/tablet&mobile/tab14.jpg);
+}
+.tab15 {
+  background-image: url(images/tablet&mobile/tab15.jpg);
+}
+.tab16 {
+  background-image: url(images/tablet&mobile/tab16.jpg);
+}
+.tab17 {
+  background-image: url(images/tablet&mobile/tab17.jpg);
+}
+.tab18 {
+  background-image: url(images/tablet&mobile/tab18.jpg);
+}
+.tab19 {
+  background-image: url(images/tablet&mobile/tab19.jpg);
+}
+.tab20 {
+  background-image: url(images/tablet&mobile/tab20.jpg);
+}
+.tab21 {
+  background-image: url(images/tablet&mobile/tab21.png);
+}
+
+.product-mob {
+  width: 80px;     
+  height: 80px;
+  background-size: cover;    
+  background-position: center;
+  border-radius: 5px;
+  margin-left: 75px; 
+}
+
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+/* Main Image */
+.main-img {
+  width: 100%;
+  height: 400px;
+  background-image: url(images/mobile/ios/1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* Thumbnails */
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.small-img {
+  width: 100%;
+  height: 110px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.small-img:hover {
+  transform: scale(1.05);
+}
+
+/* Individual Thumbnail Images */
+.img1 { background-image: url(images/mobile/ios/1.jpg); }
+.img2 { background-image: url(images/mobile/ios/2.jpg); }
+.img3 { background-image: url(images/mobile/ios/4.jpg); }
+.img4 { background-image: url(images/mobile/ios/3.jpg); }
+
+.main-img1 {
+  width: 100%;
+  height: 400px;
+  background-image: url(images/mobile/ios/15.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.img5 { background-image: url(images/mobile/ios/15.jpg); }
+.img6 { background-image: url(images/mobile/ios/16.jpg); }
+.img7 { background-image: url(images/mobile/ios/14.jpg); }
+.img8 { background-image: url(images/mobile/ios/17.jpg); }
+
+.main-img2 {
+  width: 100%;
+  height: 400px;
+  background-image: url(images/mobile/ios/18.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.img9 { background-image: url(images/mobile/ios/18.jpg); }
+.img10 { background-image: url(images/mobile/ios/19.jpg); }
+.img11 { background-image: url(images/mobile/ios/14.jpg); }
+.img12 { background-image: url(images/mobile/ios/20.jpg); }
+
+.main-img3 {
+  width: 100%;
+  height: 400px;
+  background-image: url(images/mobile/ios/21.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.img13 { background-image: url(images/mobile/ios/21.jpg); }
+.img14 { background-image: url(images/mobile/ios/25.jpg); }
+.img15 { background-image: url(images/mobile/ios/14.jpg); }
+.img16 { background-image: url(images/mobile/ios/23.jpg); }
+
+
+/*headphones*/
+
+
+.main-img5 {
+  width: 100%;
+  height: 450px;
+  background-image: url(images/headphones/1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.img21 { background-image: url(images/headphones/1.jpg); }
+.img22 { background-image: url(images/headphones/3.jpg); }
+.img23 { background-image: url(images/headphones/2.jpg); }
+.img24 { background-image: url(images/headphones/4.jpg); }
+
+.main-img6 {
+  width: 100%;
+  height: 450px;
+  background-image: url(images/headphones/11.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.img25 { background-image: url(images/headphones/11.jpg); }
+.img26 { background-image: url(images/headphones/14.jpg); }
+.img27 { background-image: url(images/headphones/13.jpg); }
+.img28 { background-image: url(images/headphones/17.jpg); }
+
+.main-img7 {
+  width: 100%;
+  height: 450px;
+  background-image: url(images/headphones/18.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.img29 { background-image: url(images/headphones/18.jpg); }
+.img30 { background-image: url(images/headphones/19.jpg); }
+.img31 { background-image: url(images/headphones/20.jpg); }
+.img32 { background-image: url(images/headphones/21.jpg); }
+
+.main-img8 {
+  width: 100%;
+  height: 450px;
+  background-image: url(images/headphones/22.jpg);;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.img33 { background-image: url(images/headphones/22.jpg); }
+.img34 { background-image: url(images/headphones/23.jpg); }
+.img35 { background-image: url(images/headphones/24.jpg); }
+.img36 { background-image: url(images/headphones/25.jpg); }
